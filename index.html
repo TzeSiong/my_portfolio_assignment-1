@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width">
+        <title>My Portfolio</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <style>
             header{
@@ -17,7 +18,7 @@
                 flex-wrap: wrap;
                 width: 100%;
                 height: 400px;
-                justify-content: center;
+                justify-content: space-around;
                 border-style: groove;
                 margin-top: 20px;
             }
@@ -25,8 +26,13 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                margin: 10px;
                 border-style: groove;
                 width: 600px;
+            }
+            #face{
+                display: flex;
+                flex-wrap: wrap;
             }
             #ngeeann{
                 display: flex;
@@ -52,7 +58,9 @@
             <div id = "aboutme">
                 <h2 class="adjcenter">--Introduction--</h2>
                 <p> Hello everyone, my name is Tze Siong and welcome to my portfolio!</p>
-                <p></p>
+                <p> Currently studying in Ngee Ann Polytechnic School of InfoComm Technology, 
+                    I am trying my best to do well in every modules that is available in my course.</p>
+                <img id="face" src="Face.jpg">
             </div>
             <div>
                 <img id = "ngeeann" src="https://www.np.edu.sg/PublishingImages/Pages/contact/contact-ngee-ann.jpg">
