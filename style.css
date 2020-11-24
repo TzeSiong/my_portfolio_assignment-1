@@ -2,18 +2,34 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: fuchsia;
-    height: 100px;
+    height: 160px;
+    color: antiquewhite;
+}
+.headimg{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 160px;
 }
 .flexcontainer{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 500px;
+    align-items: center;
+    max-width: 100%;
+    height: 820px;
     justify-content: space-around;
-    border-style: groove;
+    border-style: solid;
     margin-top: 10px;
 }
+
+.backgroundimg{
+    position: absolute;
+    z-index: -1;
+    width: 99%;
+    height: 820px;
+}
+
 #aboutme{
     display: flex;
     flex-direction: column;
@@ -23,11 +39,12 @@ header{
     border-width: 10px;
     border-radius: 10px;
     width: 600px;
+    height: 500px;
     background-image: linear-gradient(to bottom right,skyblue,violet);
 }
 
 #aboutme p{
-    width: 400px;
+    max-width: 400px;
 }
 
 .aboutmeContainer{
@@ -39,33 +56,68 @@ header{
 #face{
     display: flex;
     flex-wrap: wrap;
-    justify-self: center;
     margin-top: 10px;
     border-radius: 20px;
     border-width: 6px;
     border-style: groove;
-    height: 200px;
-    width: 125px;
+    height: 160px;
+    width: 100px;
 }
+.np{
+    display: flex;
+    align-items: center;
+}
+
 #ngeeann{
     display: flex;
-    align-self: center;
-    margin: 6px;
+    margin: 10px;
     border-style: groove;
     border-width: 6px;
     border-radius: 20px;
-    width: 400px;
-    height: 250px;
+    max-width: 400px;
+    max-height: 320px;
 }
+
 .adjcenter{
     display: flex;
     justify-content: center;
 }
 
 
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 640px) { 
 
     .aboutmeContainer{
         flex-direction: column;
+    }
+}
+
+.imageContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.imageItem{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 15%;
+    display: flex;
+	flex-direction: column;
+	border: 1px solid #D3D3D3;
+}
+
+.imageItem img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 576px){
+    .imageItem{
+        flex:0 42%;
+    }
+}
+
+@media screen and (max-width: 432px){
+    .imageItem{
+        flex:0 50%;
     }
 }
