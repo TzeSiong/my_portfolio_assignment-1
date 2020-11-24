@@ -9,25 +9,40 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 400px;
+    height: 500px;
     justify-content: space-around;
     border-style: groove;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #aboutme{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 10px;
+    margin: 6px;
     border-style: groove;
+    border-width: 10px;
+    border-radius: 10px;
     width: 600px;
+    background-image: linear-gradient(to bottom right,skyblue,violet);
 }
+
+#aboutme p{
+    width: 400px;
+}
+
+.aboutmeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #face{
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
     margin-top: 10px;
     border-radius: 20px;
+    border-width: 6px;
     border-style: groove;
     height: 200px;
     width: 125px;
@@ -35,8 +50,9 @@ header{
 #ngeeann{
     display: flex;
     align-self: center;
-    margin: 10px;
+    margin: 6px;
     border-style: groove;
+    border-width: 6px;
     border-radius: 20px;
     width: 400px;
     height: 250px;
@@ -44,4 +60,12 @@ header{
 .adjcenter{
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 992px) { 
+
+    .aboutmeContainer{
+        flex-direction: column;
+    }
 }
