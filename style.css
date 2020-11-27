@@ -458,6 +458,12 @@ header{
     height: 50%;
 }
 
+@media screen and (min-width: 1360px){
+  #ngeeann{
+    width: 650px;
+  }
+}
+
 .adjheaderCenter{
     display: flex;
     justify-content: center;
@@ -560,6 +566,20 @@ header{
   width: 300px;
 }
 
+.quoted{
+  font-family: 'Lobster Two', cursive;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color:rgb(255, 255, 161);
+}
+
 /* Contact Us Page*/
 .contactpage{
   background-image: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014_1280.jpg');
@@ -602,6 +622,12 @@ textarea{
     justify-content: center;
     width: 600px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 640px){
+  .contactusImage{
+    width: 100%;
+  }
 }
 
 h1{
