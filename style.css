@@ -348,6 +348,10 @@
     display: none;
   }
 
+.mainpage{
+    background-color: rgb(240, 240, 240);
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -370,14 +374,10 @@ header{
     height: 740px;
     justify-content: space-around;
     margin-top: 2px;
-}
-
-.backgroundimg{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 740px;
-    margin-top: 2px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/10/16/29/abstract-2055567_1280.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 
 .navbar {
@@ -438,6 +438,7 @@ header{
     border-radius: 20px;
     border-width: 6px;
     border-style: groove;
+    border-color: lightsteelblue;
     height: 160px;
     width: 100px;
 }
@@ -450,10 +451,11 @@ header{
     display: flex;
     margin: 5px;
     border-style: groove;
+    border-color: lightseagreen;
     border-width: 6px;
     border-radius: 20px;
     width: 400px;
-    height: 40%;
+    height: 50%;
 }
 
 .adjheaderCenter{
@@ -506,7 +508,6 @@ header{
 .moreinfoContainer{
     display: flex;
     justify-content: space-around;
-    width: 100%;
     border-style: dotted;
     flex-wrap: wrap;
 }
@@ -546,9 +547,71 @@ header{
     align-items: center;
 }
 
+.skillset{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#programmingImg{
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Contact Us Page*/
+.contactpage{
+  background-image: url('https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+input, textarea{
+  display: block;
+}
+
+textarea{
+  width: 300px;
+  height: 200px;
+}
+
+.contactContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.contactForm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 350px;
+  height: 450px;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: lightgray;
+}
 
 .contactusImage{
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+h1{
+  font-family: 'Sansita Swashed', cursive;
+}
+
+h2, h3, h4, li{
+  font-family: 'Taviraj', serif;
+}
+
+p, dd, dt, input, textarea{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
